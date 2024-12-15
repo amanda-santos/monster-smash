@@ -4,7 +4,9 @@ import TheWelcome from './components/TheWelcome.vue'
 </script> -->
 
 <template>
-  <h1>Monster Smash</h1>
+  <main class="bg-darkBg h-screen">
+    <h1 class="text-3xl font-bold font-mono text-main text-center">Hello world!</h1>
+  </main>
 </template>
 
 <!-- <style scoped>
