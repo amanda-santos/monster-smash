@@ -86,17 +86,19 @@ const healPlayer = () => {
 
 <template>
   <main
-    class="bg-bg h-screen bg-[linear-gradient(to_right,#80808033_1px,transparent_1px),linear-gradient(to_bottom,#80808033_1px,transparent_1px)] bg-[size:70px_70px] flex flex-col justify-center items-center p-20"
+    class="bg-bg h-screen bg-[linear-gradient(to_right,#80808033_1px,transparent_1px),linear-gradient(to_bottom,#80808033_1px,transparent_1px)] bg-[size:20px_20px] flex flex-col justify-center items-center p-20"
   >
-    <div class="max-w-[1200px] flex flex-col gap-8">
-      <h1 class="text-3xl font-bold font-mono text-main text-center mb-4">Monster Smash</h1>
+    <div class="flex flex-col gap-8">
+      <h1 class="text-3xl font-bold font-mono text-text text-center uppercase mb-4">
+        > Monster Smash
+      </h1>
 
       <section class="flex w-full">
-        <img src="./assets/monster.svg" alt="" class="w-24" :class="monsterImageAnimation" />
+        <img src="./assets/monster.svg" alt="" class="w-24" />
         <div class="w-full">
-          <h2>Monster Health</h2>
-          <div class="w-full h-10 border-s-gray-600 m-1 bg-purple-300">
-            <div class="w-full h-full bg-purple-800" :style="monsterBarStyles"></div>
+          <h2 class="text-text font-semibold uppercase font-mono">> Monster</h2>
+          <div class="w-full h-10 border-border border-4 m-1 bg-border">
+            <div class="w-full h-full bg-main" :style="monsterBarStyles"></div>
           </div>
         </div>
       </section>
@@ -104,9 +106,9 @@ const healPlayer = () => {
       <section class="flex w-full">
         <img src="./assets/player.svg" alt="" class="w-24" />
         <div class="w-full">
-          <h2>Your Health</h2>
-          <div class="w-full h-10 border-s-gray-600 m-1 bg-purple-300">
-            <div class="w-full h-full bg-purple-800" :style="playerBarStyles"></div>
+          <h2 class="text-text font-semibold uppercase font-mono">> You</h2>
+          <div class="w-full h-10 border-border border-4 m-1 bg-border">
+            <div class="w-full h-full bg-main" :style="playerBarStyles"></div>
           </div>
         </div>
       </section>
