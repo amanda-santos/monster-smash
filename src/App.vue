@@ -86,19 +86,19 @@ const healPlayer = () => {
 
 <template>
   <main
-    class="bg-bg h-screen bg-[linear-gradient(to_right,#80808033_1px,transparent_1px),linear-gradient(to_bottom,#80808033_1px,transparent_1px)] bg-[size:20px_20px] flex flex-col justify-center items-center p-20"
+    class="flex h-screen flex-col items-center justify-center bg-bg bg-[linear-gradient(to_right,#80808033_1px,transparent_1px),linear-gradient(to_bottom,#80808033_1px,transparent_1px)] bg-[size:20px_20px] p-20"
   >
     <div class="flex flex-col gap-8">
-      <h1 class="text-3xl font-bold font-mono text-text text-center uppercase mb-4">
+      <h1 class="mb-4 text-center font-mono text-3xl font-bold uppercase text-text">
         > Monster Smash
       </h1>
 
       <section class="flex w-full">
         <img src="./assets/monster.svg" alt="" class="w-24" />
         <div class="w-full">
-          <h2 class="text-text font-semibold uppercase font-mono">> Monster</h2>
-          <div class="w-full h-10 border-border border-4 m-1 bg-border">
-            <div class="w-full h-full bg-main" :style="monsterBarStyles"></div>
+          <h2 class="font-mono font-semibold uppercase text-text">> Monster</h2>
+          <div class="m-1 h-10 w-full border-4 border-border bg-border">
+            <div class="h-full w-full bg-main" :style="monsterBarStyles"></div>
           </div>
         </div>
       </section>
@@ -106,9 +106,9 @@ const healPlayer = () => {
       <section class="flex w-full">
         <img src="./assets/player.svg" alt="" class="w-24" />
         <div class="w-full">
-          <h2 class="text-text font-semibold uppercase font-mono">> You</h2>
-          <div class="w-full h-10 border-border border-4 m-1 bg-border">
-            <div class="w-full h-full bg-main" :style="playerBarStyles"></div>
+          <h2 class="font-mono font-semibold uppercase text-text">> You</h2>
+          <div class="m-1 h-10 w-full border-4 border-border bg-border">
+            <div class="h-full w-full bg-main" :style="playerBarStyles"></div>
           </div>
         </div>
       </section>
