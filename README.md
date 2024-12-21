@@ -1,6 +1,6 @@
 # monster-smash
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a game project for learning purposes.
 
 ## Recommended IDE Setup
 
